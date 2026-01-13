@@ -1,0 +1,113 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #FEDBE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background-color: #FCEEF5;
+    border-radius: 10px;
+    padding: 20px;
+    border: 0.7px solid #FC6380;
+    box-shadow: 0 5px 10px #CA8FB3;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 104px;
+    height: 72px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 9px #fadfe6,3px 4px 9px rgba(255, 158, 187, 0.986);
+    background: transparent;
+    font-size: 20px;
+    font-family: "Inria Serif", serif;
+    color:white;
+    cursor: pointer;
+    margin: 10px;
+            
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    box-shadow: none;
+    flex: 1;
+    font-size: 45px;
+    font-family: "Inria Serif", serif;
+}
+form input.number{
+    color: #92075F;
+}
+input[type="button"].number{
+    background-color: #FBE8EE;
+    transition: background-color 0.2s;
+}
+input[type="button"].operator{
+    background-color: #FC6380;
+    transition: background-color 0.2s;
+
+}
+input[type="button"].special{
+    background-color: #FAA3CC;
+    transition: background-color 0.2s;
+}
+
+input[type="button"].number:hover{
+    background-color: #fdd1d9;
+    filter: brightness(100%);
+}
+input[type="button"].operator:hover{
+    background-color: #ff3258;
+
+}
+input[type="button"].special:hover{
+    background-color: #f768ab;
+}
+
+input[type="button"].number:active{
+    transform: scale(0.96);
+    box-shadow: 0px 0px 0px #fadfe6,
+                0px 0px 0px rgba(255, 158, 187, 0.986);
+}
+input[type="button"].operator:active{
+    transform: scale(0.96);
+    box-shadow: 0px 0px 0px #fadfe6,
+                0px 0px 0px rgba(255, 158, 187, 0.986);
+}
+input[type="button"].special:active{
+    transform: scale(0.96);
+    box-shadow: 0px 0px 0px #fadfe6,
+                0px 0px 0px rgba(255, 158, 187, 0.986);
+}
+
+.display{
+    background: linear-gradient(#FA2B79, #FA2A65, #FF5151);
+    border-radius: 10px;
+    width: 500px;
+    height: 119px;
+    box-shadow: 3px 4px 9px #fadfe6,3px 4px 9px rgba(255, 158, 187, 0.986);
+}
+input[type="button"].equal{
+    background: linear-gradient(#FA2B79, #FA2A65, #fa4040);
+    transition: background 1s;
+}
+input[type="button"].equal:hover{
+    background: linear-gradient(#ff0077, #ff0f53, #fd1a1a);
+}
+input[type="button"].equal:active{
+    transform: scale(0.96);
+    box-shadow: 0px 0px 0px #fadfe6,
+                0px 0px 0px rgba(255, 158, 187, 0.986);
+}
